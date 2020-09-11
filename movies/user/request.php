@@ -58,7 +58,7 @@ else{
                     <img src="../image/default-user.png" style="width:30px; border-radius:50%;" alt="logo ">
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item disabled" style="color:silver; text-transform:lowercase;" href="#"><?php echo $_SESSION['username'] ?></a>
+                    <a class="dropdown-item disabled" style="color:silver; text-transform:lowercase;" href="#"></a>
                     <a class="dropdown-item" style="color:#fff;" href="../controller/logout.php">Log Out</a>
                 </div>
             </li>

@@ -63,7 +63,7 @@ else{
                     <img src="../image/default-user.png" style="width:30px; border-radius:50%;" alt="logo ">
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item disabled" style="color:silver; text-transform:lowercase;" href="#"><?php echo $_SESSION['username'] ?></a>
+                    <a class="dropdown-item disabled" style="color:silver; text-transform:lowercase;" ></a>
                     <a class="dropdown-item" style="color:#fff;" href="../controller/logout.php">Log Out</a>
                 </div>
             </li>
@@ -74,16 +74,16 @@ else{
     <div class="container-fluid body">
         <div class="container">
             <div class="sbox">
-
+            <div class="searchimg" > <img src="../image/searchback.jpg" class="imgg"> </div>
                 <div>
                     <center>
                         <div class="content">
-                            <h1 style="color: white">MoviesInfo: Information about over 10k+ movies</h1>
+                            <h1 style="color: white">MovieUniverse: Information about over 10k+ movies</h1>
                             <p style="color: white">
                                 Welcome to
                                 <span style="font-weight:bold; color: #22A7F0">MovieUniverse</span> | It is site where you can view information about your favourite movie.
-                                MoviesInfo are best known for the excellent
-                                <span style="font-weight:bold; color: #22A7F0">Information</span> for each and every released and not released movies. 
+                                MovieUniverse is best known for the excellent
+                                <span style="font-weight:bold; color: #22A7F0">Information</span> for each and every released and not released movie. 
                             </p>
                         </div>
                     </center>

@@ -54,20 +54,21 @@ if (isset($_SESSION['username'])) {
             </li>
         </ul>
     </nav>
-
+ 
     <div class="container-fluid body">
+        
         <div class="container">
             <div class="sbox">
-
+                <div class="searchimg" > <img src="../image/searchback.jpg" class="imgg"> </div>
                 <div>
                     <center>
                         <div class="content">
                             <h1 style="color: white">MovieUniverse: Information about over 10k+ movies</h1>
-                            <p style="color: white" >
-                        Welcome to
-                        <span style="font-weight:bold; color: #22A7F0">MovieUniverse</span> | Here you can find information about your favorite movie or movie that you want to watch.
-                        <span style="font-weight:bold; color: #22A7F0">Browse</span> Movies and get all the details.
-                    </p>
+                            <p style="color: white">
+                                Welcome to
+                                <span style="font-weight:bold; color: #22A7F0">MovieUniverse</span> | Here you can find information about your favorite movie or movie that you want to watch.
+                                <span style="font-weight:bold; color: #22A7F0">Browse</span> Movies and get all the details.
+                            </p>
                         </div>
                     </center>
                     <form id="searchForm">
@@ -95,8 +96,7 @@ if (isset($_SESSION['username'])) {
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../js/main.js"></script>
     <script>

@@ -1,14 +1,14 @@
 body {
-    
     background: #111 !important;
-    margin : 0;
-    font-family: "Arimo",Arial,Helvetica,"Lucida Grande",sans-serif !important;
+    margin: 0;
+    font-family: "Arimo", Arial, Helvetica, "Lucida Grande", sans-serif !important;
     letter-spacing: -.03em;
     color: #fff;
     font-size: 16px;
 }
-.req-box { 
-    margin-top:50px; 
+
+.req-box {
+    margin-top: 50px;
     padding: 30px;
 }
 
@@ -17,8 +17,8 @@ body {
     font-size: 20px;
 }
 
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.95),rgba(0,0,0,0.95)),url(../image/background.jpg);
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../image/background.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -38,7 +38,7 @@ header{
 }
 
 .box1 {
-    padding: 0 40px; 
+    padding: 0 40px;
 }
 
 label {
@@ -46,17 +46,15 @@ label {
     font-weight: bold;
 }
 
-.box2{
+.box2 {
     padding: 120px 0 0 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .hidden-sm{
+    .hidden-sm {
         display: none;
-        
     }
 }
-
 
 .footer {
     text-align: center;
@@ -72,4 +70,67 @@ label {
     color: white;
     font-weight: bold;
     float: right;
+}
+
+.logo {
+    font: 30px 'Arial Narrow', sans-serif;
+    /* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+    color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    position: relative;
+    margin-top: 1%;
+}
+
+
+/* stuff for both words */
+
+.logo span {
+    position: relative;
+}
+
+.logo span:before,
+.logo span:after {
+    content: '';
+    position: absolute;
+    border-width: 32px;
+    /* makes a nice, big 64px square */
+    border-style: solid;
+    border-color: transparent;
+    height: 0;
+    z-index: 10;
+}
+
+
+/* stuff for 1st word */
+
+.logo .word1 {
+    color: #22A7F0;
+    margin-right: -32px;
+    display: inline-block;
+    /* required for transform */
+    z-index: 10;
+    /* stack 1st word on top */
+    letter-spacing: 0px;
+}
+
+.logo .word1:after {
+    left: -5px;
+    /* would be right, but we flipped the word */
+    bottom: -38px;
+}
+
+
+/* stuff for 2nd word */
+
+.logo .word2 {
+    z-index: 0;
+    /* stack 2nd word below */
+    left: 30px;
+    letter-spacing: 0px;
+}
+
+.logo .word2:after {
+    right: 86px;
+    bottom: -20px;
 }

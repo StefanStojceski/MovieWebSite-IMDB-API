@@ -1,7 +1,8 @@
+@import url(//db.onlinewebfonts.com/c/30294b8401300f8aa798b2a02892bd2e?family=Futura+LT);
 body {
     background: #111 !important;
     margin: 0;
-    font-family: "Arimo", Arial, Helvetica, "Lucida Grande", sans-serif !important;
+    font-family: "Futura LT";
     letter-spacing: -.03em;
     color: #fff;
     font-size: 16px;
@@ -34,14 +35,16 @@ header {
 
 .carouselele {
     position: relative;
-    margin-top: -250px;
+    margin-top: -450px;
     font-size: 25px !important;
     font-weight: 900;
     color: #fff;
-    font-family: "futura_ltbook", sans-serif;
+    font-family: "Futura LT";
     font-weight: normal;
     margin-bottom: 30px;
     text-transform: inherit;
+    width: 35%;
+    float: left;
 }
 
 .row {
@@ -75,8 +78,13 @@ header {
 }
 
 .img {
-    border: 5px solid #fff;
     border-radius: 5px;
+}
+
+.img:hover {
+    transition: all 1s;
+    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 .browse-movie-bottom {
@@ -131,7 +139,7 @@ a:hover {
 
 h1 {
     color: white;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family: "Futura LT";
     text-align: center;
     font-size: 40px;
     margin-top: 0px;

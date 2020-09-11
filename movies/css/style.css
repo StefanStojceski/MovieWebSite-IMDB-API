@@ -18,6 +18,15 @@ body {
     width: 100%;
 }
 
+@media (min-width:960px) {
+    #movies .col-md-3 .well {
+        height: 390px;
+    }
+    #movies .col-md-3 img {
+        height: 240px;
+    }
+}
+
 .container {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -62,8 +71,26 @@ body {
     border: 0;
     outline: 0;
     display: inline;
-    color: #fff;
-    background: #333;
+    color: #333;
+    font-family: "futura_ltbook", sans-serif;
+    position: relative;
+    z-index: 1000;
+}
+
+.searchimg {
+    position: absolute;
+    border-radius: 20px;
+    padding-left: -200px;
+}
+
+.imgg {
+    position: absolute;
+    height: 380px;
+    width: 1109px;
+    border-radius: 20px;
+    margin-top: -80px;
+    opacity: 0.4;
+    z-index: 10;
 }
 
 .movieBox {
@@ -76,8 +103,13 @@ body {
 }
 
 .img {
-    border: 5px solid #fff;
     border-radius: 5px;
+}
+
+.img:hover {
+    transition: all 1s;
+    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 .browse-movie-bottom {

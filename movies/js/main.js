@@ -119,7 +119,7 @@ function getReviews() {
     let movieId = sessionStorage.getItem('id');
     axios.get(`https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=5ec279387e9aa9488ef4d00b22acc451&language=en-US&page=1`)
 
-        .then((response) => {
+    .then((response) => {
             // https://api.themoviedb.org/3/movie/299536/reviews?api_key=5ec279387e9aa9488ef4d00b22acc451&language=en-US&page=1
             console.log(response);
             let reviews = response.data.results;
@@ -177,11 +177,11 @@ function getMovie() {
             budget = Math.round(budget);
 
             if (revenue === 0) {
-                revenue = "Revenue is less than million dollers"
+                revenue = "Revenue is less than million dollars"
             }
 
             if (budget === 0) {
-                budget = "Budget is less than million dollers"
+                budget = "Budget is less than million dollars"
             }
 
             let genre = [];
@@ -190,6 +190,7 @@ function getMovie() {
             });
 
             genres = genre.join(' / ');
+
 
             let output1 = `
             <div class="row">
@@ -208,11 +209,16 @@ function getMovie() {
                         <li class="list-group-item active">
                             <strong>Status: </strong> ${movie.status}</li>
                         <li class="list-group-item active">
+                            <strong>Released: </strong>  ${date}</li>
+                        <li class="list-group-item active">
                             <strong>Duration: </strong> ${movie.runtime} min</li>
                         <li class="list-group-item active">
                             <strong>Budget: </strong> $ ${budget} million</li>
                         <li class="list-group-item active">
                             <strong>Revenue: </strong> $ ${revenue} million</li>
+                        
+
+
                     </ul>
 
                 </div>
@@ -430,4 +436,3 @@ function getTopMovies() {
             console.log(error);
         });
 }
-

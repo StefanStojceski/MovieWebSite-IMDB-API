@@ -63,20 +63,7 @@ include('../controller/connectdb.php');
                     <img src="../image/default-user.png" style="width:30px; border-radius:50%;" alt="logo ">
                 </a>
                 <div class="dropdown-menu">
-                    <?php
-
-                    $sql = "SELECT UserId FROM userdata";
-                    $result = $conn->query($sql);
-                    $total = $result->num_rows;
-
-                    if ($result->num_rows > 0) {
-                        $row = $result->fetch_assoc();
-
-
-
-                        '<a href="profile.php?id=' . $row["UserId"] . '" name="profile" class="dropdown-item"  style="color:silver; text-transform:lowercase;" >';
-                    }
-                    $conn->close(); ?> <?php echo $_SESSION['username']  ?> </a>
+                   
                     <a class="dropdown-item" style="color:#fff;" href="../controller/logout.php">Log Out</a>
                 </div>
             </li>
@@ -115,7 +102,7 @@ include('../controller/connectdb.php');
                 <div class="carouselele">
                     <div class=" inner-body ">
                         <h1 class="title "><span style="color: #fff "> Welcome </span>
-                            <span style="color: #22A7F0; text-transform:lowercase;"><?php echo $_SESSION['username'] ?></span>
+                            <span style="color: #22A7F0; text-transform:lowercase;" href="#"><?php echo $_SESSION['username'] ?></span>
                         </h1>
                         <p style="color: white" class="content">
                             Welcome to

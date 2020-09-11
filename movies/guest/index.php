@@ -53,6 +53,10 @@ if (isset($_SESSION['username'])) {
             <li class="nav-item">
                 <a class="nav-link" href="#popup1">Log In</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#popup2">Sign Up</a>
+            </li>
+
         </ul>
     </nav>
 
@@ -171,8 +175,8 @@ if (isset($_SESSION['username'])) {
                         <p style="color: white" class="content">
                             Welcome to
                             <span style="font-weight:bold; color: #22A7F0">MovieUniverse</span> | It is site where you can view information about your favourite movie. MovieUniverse
-                            are best known for the excellent
-                            <span style="font-weight:bold; color: #22A7F0">Information</span> for each and every released and not released movies.
+                            is best known for the excellent
+                            <span style="font-weight:bold; color: #22A7F0">Information</span> for each and every released and not released movie.
                         </p>
                     </div>
                     <div class="container">
